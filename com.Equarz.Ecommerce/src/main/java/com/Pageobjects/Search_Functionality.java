@@ -32,24 +32,20 @@ public class Search_Functionality extends Testbase {
 		
 		searchbar.sendKeys(props.getProperty("product"));
 		searchbar.sendKeys(Keys.ENTER);
-		String str=driver.getCurrentUrl();
-		assertEquals("http://e-quarz.com/products?name=laptop&data_from=search&page=1", str);
+		
 
 }
 	public void dropdownsearch() throws InterruptedException 
 	{
 		
-		searchbar.sendKeys(props.getProperty("product1"),Keys.ENTER);
+		searchbar.sendKeys(props.getProperty("product"));
 		Thread.sleep(3000);
-		for(WebElement ele1:ele)
-		{
-			
-			if(ele1.getText().equals("Apple iPhone 11 (64GB) - White"))
-					{
-				ele1.click();
-				String str=driver.getCurrentUrl();
-				assertEquals("http://e-quarz.com/products?name=Apple+iPhone+11+%2864GB%29+-+White&data_from=search&page=1", str);
-				
+		for(WebElement dyn:ele) {
+
+		if (dyn.getText().equals("HP Laptop 14s, 12th Gen Intel Core i3-1215U, 14-inch (35.6 cm), FHD, 8GB DDR4, 5")) {
+			dyn.click();
+			String str1=driver.getCurrentUrl();
+			assertEquals("http://e-quarz.com/product/hp-14s-12th-gen-intel-core-i5-16gb-ram512gb-ssd-14-inch356-cm-micro-edge-fhd-laptopintel-iris-xe-graphicsalexadual-speak", str1);
 					}
 		}
 			

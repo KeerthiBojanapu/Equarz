@@ -14,20 +14,18 @@ import org.testng.annotations.DataProvider;
 import com.Pageobjects.Homepage;
 import com.base.Testbase;
 
-public class Utils extends Testbase {
-	private static final String filepath="C:\\Users\\Dell\\git\\Eccomerce_Project\\com.Equarz.Ecommerce\\src\\main\\java\\com\\testdata\\credentials.xlsx";
+public class AddressUtils extends Testbase{
+@DataProvider
 	
-	public static String[][] readdata(String sheetname) throws IOException
+	public String[][] setdata() throws IOException
 	{
-		File file=new File(filepath);
+		File file=new File("C:\\Users\\Dell\\git\\Eccomerce_Project\\com.Equarz.Ecommerce\\src\\main\\java\\com\\testdata\\Address (1).xlsx");
 		FileInputStream stream=new FileInputStream(file);
 		XSSFWorkbook workbook=new XSSFWorkbook(stream);
-		XSSFSheet sheet=workbook.getSheet(sheetname);
-		
+		XSSFSheet sheet=workbook.getSheetAt(0);
 		int rows=sheet.getPhysicalNumberOfRows();
 		int columns=sheet.getRow(1).getLastCellNum();
 		String[][] data=new String[rows-1][columns];
-		
 		for(int i=0;i<rows-1;i++) {
 			for(int j=0;j<columns;j++)
 			{
@@ -47,4 +45,5 @@ public class Utils extends Testbase {
 	
 
 }
+
 }

@@ -21,7 +21,7 @@ public class Testbase2 {
 		props = new Properties();
 
 		try {
-			file = new FileInputStream("C:\\Users\\Dell\\git\\Eccomerce_Project\\com.Equarz.Ecommerce\\src\\main\\java\\com\\PropertiesConfig\\Propfile1");
+			file = new FileInputStream("C:\\Users\\Dell\\git\\Eccomerce_Project\\com.Equarz.Ecommerce\\src\\main\\java\\com\\PropertiesConfig\\Propfile");
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -53,7 +53,7 @@ public class Testbase2 {
 
 		driver.manage().window().maximize();
 		//driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(15));
-		driver.get(props.getProperty("url"));
+		driver.get(props.getProperty("url2"));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 		//driver.manage().deleteAllCookies();
 		

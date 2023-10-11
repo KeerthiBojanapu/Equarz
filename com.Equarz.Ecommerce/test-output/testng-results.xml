@@ -1,161 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="18" passed="18" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-27T13:00:16 IST" name="Default suite" finished-at="2023-09-27T13:00:50 IST" duration-ms="33772">
+  <suite started-at="2023-10-11T11:57:42 IST" name="Default suite" finished-at="2023-10-11T11:59:20 IST" duration-ms="98037">
     <groups>
     </groups>
-    <test started-at="2023-09-27T13:00:16 IST" name="Default test" finished-at="2023-09-27T13:00:50 IST" duration-ms="33772">
-      <class name="com.Equarz.Testcases.HomelinkTest">
-        <test-method is-config="true" signature="login()[pri:0, instance:com.Equarz.Testcases.HomelinkTest@38425407]" started-at="2023-09-27T13:00:16 IST" name="login" finished-at="2023-09-27T13:00:34 IST" duration-ms="17738" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:com.Equarz.Testcases.HomelinkTest@38425407]" started-at="2023-09-27T13:00:34 IST" name="initialize" finished-at="2023-09-27T13:00:34 IST" duration-ms="5" status="PASS">
+    <test started-at="2023-10-11T11:57:42 IST" name="Default test" finished-at="2023-10-11T11:59:20 IST" duration-ms="98037">
+      <class name="com.Equarz.Testcases.LogOutTest">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:com.Equarz.Testcases.LogOutTest@397fbdb]" started-at="2023-10-11T11:57:42 IST" name="initialize" finished-at="2023-10-11T11:58:13 IST" duration-ms="30809" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="cancellation()[pri:0, instance:com.Equarz.Testcases.HomelinkTest@38425407]" started-at="2023-09-27T13:00:34 IST" name="cancellation" finished-at="2023-09-27T13:00:35 IST" duration-ms="933" status="PASS">
+        <test-method signature="back()[pri:0, instance:com.Equarz.Testcases.LogOutTest@397fbdb]" started-at="2023-10-11T11:58:13 IST" name="back" finished-at="2023-10-11T11:58:27 IST" duration-ms="14588" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- cancellation -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:com.Equarz.Testcases.HomelinkTest@38425407]" started-at="2023-09-27T13:00:35 IST" name="initialize" finished-at="2023-09-27T13:00:35 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method signature="facebook()[pri:0, instance:com.Equarz.Testcases.HomelinkTest@38425407]" started-at="2023-09-27T13:00:35 IST" name="facebook" finished-at="2023-09-27T13:00:35 IST" duration-ms="110" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- facebook -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:com.Equarz.Testcases.HomelinkTest@38425407]" started-at="2023-09-27T13:00:35 IST" name="initialize" finished-at="2023-09-27T13:00:35 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- back -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:com.Equarz.Testcases.LogOutTest@397fbdb]" started-at="2023-10-11T11:58:27 IST" name="initialize" finished-at="2023-10-11T11:58:54 IST" duration-ms="26907" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="google()[pri:0, instance:com.Equarz.Testcases.HomelinkTest@38425407]" started-at="2023-09-27T13:00:35 IST" name="google" finished-at="2023-09-27T13:00:35 IST" duration-ms="98" status="PASS">
+        <test-method signature="logout()[pri:0, instance:com.Equarz.Testcases.LogOutTest@397fbdb]" started-at="2023-10-11T11:58:54 IST" name="logout" finished-at="2023-10-11T11:58:58 IST" duration-ms="3338" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- google -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:com.Equarz.Testcases.HomelinkTest@38425407]" started-at="2023-09-27T13:00:35 IST" name="initialize" finished-at="2023-09-27T13:00:35 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method signature="insta()[pri:0, instance:com.Equarz.Testcases.HomelinkTest@38425407]" started-at="2023-09-27T13:00:35 IST" name="insta" finished-at="2023-09-27T13:00:35 IST" duration-ms="96" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- insta -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:com.Equarz.Testcases.HomelinkTest@38425407]" started-at="2023-09-27T13:00:35 IST" name="initialize" finished-at="2023-09-27T13:00:35 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="initialize()[pri:0, instance:com.Equarz.Testcases.LogOutTest@397fbdb]" started-at="2023-10-11T11:58:58 IST" name="initialize" finished-at="2023-10-11T11:59:15 IST" duration-ms="17481" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method signature="latestproduct()[pri:0, instance:com.Equarz.Testcases.HomelinkTest@38425407]" started-at="2023-09-27T13:00:35 IST" name="latestproduct" finished-at="2023-09-27T13:00:39 IST" duration-ms="3478" status="PASS">
+        <test-method signature="refresh()[pri:0, instance:com.Equarz.Testcases.LogOutTest@397fbdb]" started-at="2023-10-11T11:59:15 IST" name="refresh" finished-at="2023-10-11T11:59:20 IST" duration-ms="4865" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- latestproduct -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:com.Equarz.Testcases.HomelinkTest@38425407]" started-at="2023-09-27T13:00:39 IST" name="initialize" finished-at="2023-09-27T13:00:39 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method signature="linkedin()[pri:0, instance:com.Equarz.Testcases.HomelinkTest@38425407]" started-at="2023-09-27T13:00:39 IST" name="linkedin" finished-at="2023-09-27T13:00:39 IST" duration-ms="109" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- linkedin -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:com.Equarz.Testcases.HomelinkTest@38425407]" started-at="2023-09-27T13:00:39 IST" name="initialize" finished-at="2023-09-27T13:00:39 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method signature="mail()[pri:0, instance:com.Equarz.Testcases.HomelinkTest@38425407]" started-at="2023-09-27T13:00:39 IST" name="mail" finished-at="2023-09-27T13:00:39 IST" duration-ms="94" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- mail -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:com.Equarz.Testcases.HomelinkTest@38425407]" started-at="2023-09-27T13:00:39 IST" name="initialize" finished-at="2023-09-27T13:00:39 IST" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method signature="phone()[pri:0, instance:com.Equarz.Testcases.HomelinkTest@38425407]" started-at="2023-09-27T13:00:39 IST" name="phone" finished-at="2023-09-27T13:00:39 IST" duration-ms="137" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- phone -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:com.Equarz.Testcases.HomelinkTest@38425407]" started-at="2023-09-27T13:00:39 IST" name="initialize" finished-at="2023-09-27T13:00:39 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method signature="pinterest()[pri:0, instance:com.Equarz.Testcases.HomelinkTest@38425407]" started-at="2023-09-27T13:00:39 IST" name="pinterest" finished-at="2023-09-27T13:00:39 IST" duration-ms="110" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- pinterest -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:com.Equarz.Testcases.HomelinkTest@38425407]" started-at="2023-09-27T13:00:39 IST" name="initialize" finished-at="2023-09-27T13:00:39 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method signature="profileinfo()[pri:0, instance:com.Equarz.Testcases.HomelinkTest@38425407]" started-at="2023-09-27T13:00:39 IST" name="profileinfo" finished-at="2023-09-27T13:00:43 IST" duration-ms="3367" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- profileinfo -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:com.Equarz.Testcases.HomelinkTest@38425407]" started-at="2023-09-27T13:00:43 IST" name="initialize" finished-at="2023-09-27T13:00:43 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method signature="refundpolicy()[pri:0, instance:com.Equarz.Testcases.HomelinkTest@38425407]" started-at="2023-09-27T13:00:43 IST" name="refundpolicy" finished-at="2023-09-27T13:00:43 IST" duration-ms="748" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- refundpolicy -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:com.Equarz.Testcases.HomelinkTest@38425407]" started-at="2023-09-27T13:00:43 IST" name="initialize" finished-at="2023-09-27T13:00:43 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method signature="returnpolicy()[pri:0, instance:com.Equarz.Testcases.HomelinkTest@38425407]" started-at="2023-09-27T13:00:43 IST" name="returnpolicy" finished-at="2023-09-27T13:00:44 IST" duration-ms="660" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- returnpolicy -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:com.Equarz.Testcases.HomelinkTest@38425407]" started-at="2023-09-27T13:00:44 IST" name="initialize" finished-at="2023-09-27T13:00:44 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method signature="search()[pri:0, instance:com.Equarz.Testcases.HomelinkTest@38425407]" started-at="2023-09-27T13:00:44 IST" name="search" finished-at="2023-09-27T13:00:45 IST" duration-ms="1413" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- search -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:com.Equarz.Testcases.HomelinkTest@38425407]" started-at="2023-09-27T13:00:45 IST" name="initialize" finished-at="2023-09-27T13:00:45 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method signature="sellingproducts()[pri:0, instance:com.Equarz.Testcases.HomelinkTest@38425407]" started-at="2023-09-27T13:00:45 IST" name="sellingproducts" finished-at="2023-09-27T13:00:47 IST" duration-ms="1613" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sellingproducts -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:com.Equarz.Testcases.HomelinkTest@38425407]" started-at="2023-09-27T13:00:47 IST" name="initialize" finished-at="2023-09-27T13:00:47 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method signature="supportticket()[pri:0, instance:com.Equarz.Testcases.HomelinkTest@38425407]" started-at="2023-09-27T13:00:47 IST" name="supportticket" finished-at="2023-09-27T13:00:48 IST" duration-ms="851" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- supportticket -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:com.Equarz.Testcases.HomelinkTest@38425407]" started-at="2023-09-27T13:00:48 IST" name="initialize" finished-at="2023-09-27T13:00:48 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method signature="toprated()[pri:0, instance:com.Equarz.Testcases.HomelinkTest@38425407]" started-at="2023-09-27T13:00:48 IST" name="toprated" finished-at="2023-09-27T13:00:49 IST" duration-ms="1240" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- toprated -->
-        <test-method signature="trackorder()[pri:0, instance:com.Equarz.Testcases.HomelinkTest@38425407]" started-at="2023-09-27T13:00:49 IST" name="trackorder" finished-at="2023-09-27T13:00:50 IST" duration-ms="759" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- trackorder -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:com.Equarz.Testcases.HomelinkTest@38425407]" started-at="2023-09-27T13:00:49 IST" name="initialize" finished-at="2023-09-27T13:00:49 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method is-config="true" signature="initialize()[pri:0, instance:com.Equarz.Testcases.HomelinkTest@38425407]" started-at="2023-09-27T13:00:50 IST" name="initialize" finished-at="2023-09-27T13:00:50 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- initialize -->
-        <test-method signature="twitter()[pri:0, instance:com.Equarz.Testcases.HomelinkTest@38425407]" started-at="2023-09-27T13:00:50 IST" name="twitter" finished-at="2023-09-27T13:00:50 IST" duration-ms="103" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- twitter -->
-      </class> <!-- com.Equarz.Testcases.HomelinkTest -->
+        </test-method> <!-- refresh -->
+      </class> <!-- com.Equarz.Testcases.LogOutTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

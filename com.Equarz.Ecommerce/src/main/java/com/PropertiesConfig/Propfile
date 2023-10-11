@@ -2,9 +2,10 @@ browser=chrome
 url=http://e-quarz.com/customer/auth/login
 username=jakkamsairam3@gmail.com
 password=Namo@12345
+username1=keerthi.marolix@gmail.com
+password1=Keerthi@123
 product1=Apple
-
+name=india
 url1=http://e-quarz.com/
-
 product=laptop
-ur2=http://e-quarz.com/customer/auth/sign-up
+url2=http://e-quarz.com/customer/auth/sign-up

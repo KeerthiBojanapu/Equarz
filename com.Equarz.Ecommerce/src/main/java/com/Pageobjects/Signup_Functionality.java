@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.base.Testbase;
 import com.base.Testbase2;
 
-public class Signup_Functionality extends Testbase2 {
+public class Signup_Functionality extends Testbase {
 	@FindBy(xpath="//input[@name='f_name']")
 	WebElement fname;
 	
