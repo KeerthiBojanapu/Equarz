@@ -50,5 +50,6 @@ public class LogOut_Functionality extends Testbase {
 		driver.navigate().back();
 		String url=driver.getCurrentUrl();
 		assertEquals("http://e-quarz.com/", url);
+		
 }
 }
