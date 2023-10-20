@@ -11,6 +11,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.Utils.Utils;
 import com.base.Testbase;
 
 public class Homelink_Functionality extends Testbase {
@@ -52,6 +53,7 @@ public class Homelink_Functionality extends Testbase {
 	WebElement insta;
 	@FindBy(xpath="//i[@class='fa fa-facebook']")
 	WebElement facebook;
+	
 	
 	
 	public Homelink_Functionality(WebDriver driver)
@@ -171,59 +173,77 @@ public class Homelink_Functionality extends Testbase {
 	}
 	public void twitter() 
 	{
+		String str="";
+		 String window1=driver.getWindowHandle();
 		Point loc=scroll.getLocation();
 		JavascriptExecutor js=(JavascriptExecutor)driver;
 		js.executeScript("window.scrollBy"+loc);
 		twitter.click();
-//		String url=driver.getCurrentUrl();
-//		assertEquals("https://twitter.com/i/flow/login?redirect_after_login=%2F%3Flang%3Den-in", url);
+		String url=driver.getCurrentUrl();
+		assertEquals("https://twitter.com/i/flow/login?redirect_after_login=%2F%3Flang%3Den-in", url);
 	}
 	public void linkedin() 
 	{
+		String str="";
+		 String window1=driver.getWindowHandle();
 		Point loc=scroll.getLocation();
 		JavascriptExecutor js=(JavascriptExecutor)driver;
 		js.executeScript("window.scrollBy"+loc);
 		linkedin.click();
-//		String url=driver.getCurrentUrl();
-//		assertEquals("https://in.linkedin.com/", url);
+		String url=driver.getCurrentUrl();
+		assertEquals("https://in.linkedin.com/", url);
 	}
 	public void google() 
 	{
+		String str="";
+		 String window1=driver.getWindowHandle();
 		Point loc=scroll.getLocation();
 		JavascriptExecutor js=(JavascriptExecutor)driver;
 		js.executeScript("window.scrollBy"+loc);
 	    google.click();
-//	    String url=driver.getCurrentUrl();
-//		assertEquals("https://www.marolix.com/", url);
-	}public void pinterest() 
+	    String url=driver.getCurrentUrl();
+		assertEquals("https://www.marolix.com/", url);
+	}
+	public void pinterest() 
 	{
+		
 		Point loc=scroll.getLocation();
 		JavascriptExecutor js=(JavascriptExecutor)driver;
 		js.executeScript("window.scrollBy"+loc);
+		String str="";
+		 String window1=driver.getWindowHandle();
 		pinterest.click();
-//		String url=driver.getCurrentUrl();
-//		assertEquals("https://www.pinterest.com/pinterest/", url);
+		String url=driver.getCurrentUrl();
+		assertEquals("https://www.pinterest.com/pinterest/", url);
 	}
 	public void insta() 
 	{
+		
 		Point loc=scroll.getLocation();
 		JavascriptExecutor js=(JavascriptExecutor)driver;
 		js.executeScript("window.scrollBy"+loc);
+		String str="";
+		 String window1=driver.getWindowHandle();
 		insta.click();
-//		String url=driver.getCurrentUrl();
-//		assertEquals("https://www.instagram.com/?hl=en", url);
+		//au.windowhandles(window1);
+		String url=driver.getCurrentUrl();
+		driver.switchTo().window(window1);
+		assertEquals("https://www.instagram.com/?hl=en", url);
 	}
 	public void facebook() 
 	{
+		
 		Point loc=scroll.getLocation();
 		JavascriptExecutor js=(JavascriptExecutor)driver;
 		js.executeScript("window.scrollBy"+loc);
+		String str="";
+		 String window1=driver.getWindowHandle();
 		facebook.click();
-//		String url=driver.getCurrentUrl();
-//		assertEquals("https://www.facebook.com/", url);
+		//au.windowhandles(window1);
+		String url=driver.getCurrentUrl();
+		driver.switchTo().window(window1);
+		assertEquals("https://www.facebook.com/", url);
 	}
-		
-		
 		
 		
 	}

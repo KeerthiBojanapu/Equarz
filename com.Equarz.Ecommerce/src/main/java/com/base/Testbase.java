@@ -11,12 +11,17 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.events.EventFiringWebDriver;
+
+import com.Utils.ListenerEvent;
 
 public class Testbase {
 
 	FileInputStream file;
 	public static Properties props;
 	public static WebDriver driver;
+	EventFiringWebDriver edriver;
+	ListenerEvent event;
 
 	public Testbase() {
 		
@@ -53,6 +58,10 @@ public class Testbase {
 		else if (browsername.equalsIgnoreCase("firefox")) {
 			driver = new FirefoxDriver();
 		}
+		edriver=new EventFiringWebDriver(driver);
+		event=new ListenerEvent();
+		edriver.register(event);
+		driver=edriver;
 
 		driver.manage().window().maximize();
 		//driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(15));

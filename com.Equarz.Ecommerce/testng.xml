@@ -6,11 +6,9 @@
 	</listeners>
   <test thread-count="5" name="Test">
     <classes>
-     
-     
-      <class name="com.Equarz.Testcases.AddressTest"/>
-     
+      
+      <class name="com.Equarz.Testcases.SearchTest"/>
+      
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
-
