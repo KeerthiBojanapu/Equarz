@@ -74,6 +74,7 @@ public class EditProfile_Functionality extends Testbase {
 		System.out.println(print);
 		assertEquals("Updated successfully",print);
 		
+		
 
 	}
 

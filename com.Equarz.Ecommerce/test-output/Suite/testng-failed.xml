@@ -6,23 +6,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.Equarz.Testcases.AddressTest">
+      <class name="com.Equarz.Testcases.SearchTest">
         <methods>
-          <include name="addaddress"/>
-          <include name="login"/>
-          <include name="deleteaddress"/>
+          <include name="teardown"/>
+          <include name="searchdrop"/>
           <include name="initialize"/>
-          <include name="editaddress"/>
         </methods>
-      </class> <!-- com.Equarz.Testcases.AddressTest -->
-      <class name="com.Equarz.Testcases.LogOutTest">
-        <methods>
-          <include name="logout"/>
-          <include name="initialize"/>
-          <include name="back"/>
-          <include name="refresh"/>
-        </methods>
-      </class> <!-- com.Equarz.Testcases.LogOutTest -->
+      </class> <!-- com.Equarz.Testcases.SearchTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
