@@ -2,31 +2,27 @@ package com.Pageobjects;
 
 import static org.testng.Assert.assertEquals;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.WindowType;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.openqa.selenium.support.ui.Select;
 
 import com.Utils.Utils;
 import com.base.Testbase;
 
-public class Buynow_Functionality extends Testbase {
+public class CustomerorderFunctionality extends Testbase {
 	@FindBy(xpath="//span[text()='TVs & Appliances']")
 	WebElement cat;
 	@FindBy(xpath="//span[text()='Microwave oven']")
 	WebElement subcat;
-	@FindBy(xpath="//a[text()='Premium']")
+	@FindBy(xpath="//a[text()='Normal']")
 	WebElement subsub;
-	@FindBy(xpath="//a[@href='http://e-quarz.com/product/wipro-vesta-ctg01-28-l-oven-toast-grillotg-1600-watt-with-smart-cook-function-rotisserie-convection-6-stage-heating-gril']")
+	@FindBy(xpath="//a[@href='http://e-quarz.com/product/lifelong-llot10-10-litres-oven-toaster-griller-with-auto-shut-off-and-30-minute-timer-otg-oven-for-baking-cake-pizza-gri']")
     WebElement product;
-	@FindBy(xpath="//span[text()='Add to cart']")
-	WebElement addtocart;
-	@FindBy(xpath="//i[@class='navbar-tool-icon czi-cart']")
-	WebElement cart;
+	@FindBy(xpath="//span[text()='Buy now']")
+	WebElement buy;
 	@FindBy(xpath="//select[@class='form-control']")
 	WebElement shipping;
 	Utils ul;
@@ -40,14 +36,21 @@ public class Buynow_Functionality extends Testbase {
 	WebElement cod;
 	@FindBy(xpath="//div[@class='col-md-6']")
 	WebElement msg;
+	@FindBy(xpath="//input[@id='signinSrEmail']")
+	WebElement user;
+	@FindBy(xpath="//input[@name='password']")
+	WebElement pass;
+	@FindBy(xpath="//button[text()='Sign in']")
+	WebElement signin;
+	
+	@FindBy(xpath="//i[@class='tio-shopping-cart-outlined nav-icon']")
+	WebElement orders;
+	@FindBy(xpath="//a[@title='Pending']")
+	WebElement pending;
 	
 	
-	@FindBy(xpath="//a[@href='http://e-quarz.com/product/mi-portable-wireless-bluetooth-speaker-blue16w-hi-quality-speaker-with-micupto-13hrs-playback-16HcSx']")
-	WebElement prod;
-	@FindBy(xpath="//span[text()='Buy now']")
-	WebElement buynow;
 	
-	public Buynow_Functionality(WebDriver driver)
+	public CustomerorderFunctionality(WebDriver driver)
 	{
 		PageFactory.initElements(driver, this);
 	}
@@ -60,10 +63,9 @@ public class Buynow_Functionality extends Testbase {
 		ac.moveToElement(subcat).build().perform();
 		subsub.click();		
 		product.click();
-		addtocart.click();
-		cart.click();
+		buy.click();
 		ul=new Utils();
-		Utils.dropdown(shipping, "2");
+		Utils.dropdown(shipping, "6");
 		checkout.click();
 		checkbox.click();
 		payment.click();
@@ -71,25 +73,16 @@ public class Buynow_Functionality extends Testbase {
 		String print=msg.getText();
 		assertEquals("Your order has been placed successfully! !",print);
 		WebDriver newTab = driver.switchTo().newWindow(WindowType.TAB);
+		newTab.get("http://e-quarz.com/admin/auth/login");
+		user.sendKeys("arun@marolix.com");
+		pass.sendKeys("Reset@123");
+		Thread.sleep(10000);
+		signin.click();
+		orders.click();
+		pending.click();
+		
+		
 		
 
-	}
-	public void buynow() throws InterruptedException 
-	{
-			
-		prod.click();
-		buynow.click();
-		ul=new Utils();
-		Utils.dropdown(shipping, "4");
-		checkout.click();
-		checkbox.click();
-		payment.click();
-		cod.click();
-		String print=msg.getText();
-		assertEquals("Your order has been placed successfully! !",print);
-		WebDriver newTab = driver.switchTo().newWindow(WindowType.TAB);
-		
-	
-	}	
-
+}
 }

@@ -144,15 +144,15 @@ public class ListenerEvent extends Testbase implements WebDriverEventListener{
 		
 	}
 
-	@Override
-	public void onException(Throwable throwable, WebDriver driver) {
-		try {
-			Utils.takeScreenshotAtEndOfTest();
-		}catch(IOException e) {
-			e.printStackTrace();
-		}
+	//@Override
+//	public void onException(Throwable throwable, WebDriver driver) {
+//		try {
+//			Utils.takeScreenshotAtEndOfTest();
+//		}catch(IOException e) {
+//			e.printStackTrace();
+//		}
 		
-	}
+	//}
 
 	@Override
 	public <X> void beforeGetScreenshotAs(OutputType<X> target) {

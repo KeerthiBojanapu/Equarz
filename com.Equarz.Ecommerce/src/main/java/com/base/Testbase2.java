@@ -22,7 +22,7 @@ public class Testbase2 {
 		props = new Properties();
 
 		try {
-			file = new FileInputStream("C:\\Users\\Dell\\git\\Eccomerce_Project\\com.Equarz.Ecommerce\\src\\main\\java\\com\\PropertiesConfig\\Propfile");
+			file = new FileInputStream("C:\\Users\\keerthi\\git\\Equarz\\com.Equarz.Ecommerce\\src\\main\\java\\com\\PropertiesConfig\\Propfile");
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
