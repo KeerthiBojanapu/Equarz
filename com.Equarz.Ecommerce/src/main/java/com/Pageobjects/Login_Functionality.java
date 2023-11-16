@@ -25,7 +25,7 @@ public class Login_Functionality extends Testbase {
 	{
 		PageFactory.initElements(driver, this);
 	}
-	//public Homepage validateLogin(String user1,String password1) throws InterruptedException
+	//public void validateLogin(String user1,String password1) throws InterruptedException
 	public void validateLogin()
 	{
 //		user.sendKeys(user1);
@@ -37,6 +37,7 @@ public class Login_Functionality extends Testbase {
 		
 		element.sendKeys(str);
 		signinbtn.click();
+		
 		
 		
 		

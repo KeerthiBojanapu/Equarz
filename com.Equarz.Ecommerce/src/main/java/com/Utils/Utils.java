@@ -19,7 +19,7 @@ import com.Pageobjects.Homepage;
 import com.base.Testbase;
 
 public class Utils extends Testbase {
-	private static final String filepath="C:\\Users\\Dell\\git\\Eccomerce_Project\\com.Equarz.Ecommerce\\src\\main\\java\\com\\testdata\\credentials.xlsx";
+	private static final String filepath="C:\\Users\\keerthi\\git\\Equarz\\com.Equarz.Ecommerce\\src\\main\\java\\com\\testdata\\totalcredentials.xlsx";
 	
 	public static String[][] readdata(String sheetname) throws IOException
 	{
