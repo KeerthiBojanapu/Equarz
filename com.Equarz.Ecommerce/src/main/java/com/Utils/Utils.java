@@ -60,4 +60,18 @@ public static void takeScreenshotAtEndOfTest() throws IOException
 	FileUtils.copyFile(scrFile, new File(currentDir + "/screenshots/" + System.currentTimeMillis() + ".png"));
 	
 }
+public Homepage windowhandles(String window)
+{
+	Set<String> handles=driver.getWindowHandles();
+	for(String hand : handles)
+	{
+		if(!window.equals(hand))
+		{
+			driver.switchTo().window(hand);
+			driver.manage().window().maximize();
+		}
+	}
+	return null;
+	
+}
 }
