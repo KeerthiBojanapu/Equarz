@@ -87,7 +87,6 @@ public class Buynow_Functionality extends Testbase {
 		cod.click();
 		String print=msg.getText();
 		assertEquals("Your order has been placed successfully! !",print);
-		WebDriver newTab = driver.switchTo().newWindow(WindowType.TAB);
 		
 	
 	}	
