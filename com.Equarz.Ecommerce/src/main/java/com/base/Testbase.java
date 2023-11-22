@@ -65,7 +65,7 @@ public class Testbase {
 
 		driver.manage().window().maximize();
 		//driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(15));
-		driver.get(props.getProperty("url"));
+		driver.get(props.getProperty("url3"));
 		//driver.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 		//driver.manage().deleteAllCookies();

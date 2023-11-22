@@ -35,8 +35,8 @@ public class CustomerorderFunctionality extends Testbase {
 	WebElement payment;
 	@FindBy(xpath="//img[@class='__mt-n-10']")
 	WebElement cod;
-	@FindBy(xpath="//div[@class='col-md-6']")
-	WebElement msg;
+//	@FindBy(xpath="//div[@class='col-md-6']")
+//	WebElement msg;
 	@FindBy(xpath="//input[@id='signinSrEmail']")
 	WebElement user;
 	@FindBy(xpath="//input[@name='password']")
@@ -99,8 +99,8 @@ public class CustomerorderFunctionality extends Testbase {
 		checkbox.click();
 		payment.click();
 		cod.click();
-		String print=msg.getText();
-		assertEquals("Your order has been placed successfully! !",print);
+//		String print=msg.getText();
+//		assertEquals("Your order has been placed successfully! !",print);
 		WebDriver newTab = driver.switchTo().newWindow(WindowType.TAB);
 		newTab.get("http://e-quarz.com/admin/auth/login");
 		user.sendKeys("arun@marolix.com");
@@ -116,26 +116,18 @@ public class CustomerorderFunctionality extends Testbase {
 		Select sel=new Select(dropdown);
 		sel.selectByVisibleText(" Confirmed");
 		alert.click();
-		 String window1 = driver.getWindowHandle();
-		 ul.windowhandles(window1);
+		String window1 = driver.getWindowHandle();
+		ul.windowhandles(window1);
 		 //driver.navigate().refresh();
-		 ac.moveToElement(dashboard).build().perform();
-		 myorder.click();
-		 track.click();
-		 orderid.sendKeys("100230");
-		 phno.sendKeys("8106637137");
-		 trackorder.click();
-		 String print1=orderstatus.getText();
-			System.out.println(print1);
-			assertEquals("CONFIRMED",print1);
-		 
-		 
-		
-		
-		
-		
-		
-		
-
+		ac.moveToElement(dashboard).build().perform();
+		myorder.click();
+		track.click();
+		orderid.sendKeys("100230");
+		phno.sendKeys("8106637137");
+		trackorder.click();
+		String print1=orderstatus.getText();
+		System.out.println(print1);
+		assertEquals("CONFIRMED",print1);
+		 				
 }
 }

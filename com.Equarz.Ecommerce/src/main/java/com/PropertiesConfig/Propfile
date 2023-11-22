@@ -11,3 +11,4 @@ product=laptop
 url2=http://e-quarz.com/customer/auth/sign-up
 username2=arun@marolix.com
 Password2=Reset@123
+url3=https://katalon-demo-cura.herokuapp.com/profile.php#login
