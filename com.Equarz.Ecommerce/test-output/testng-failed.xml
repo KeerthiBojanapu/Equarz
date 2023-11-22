@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Equarz.Testcases.CustomerorderTest">
+      <class name="com.Equarz.Testcases.FailedScreenshotTest">
         <methods>
-          <include name="login"/>
           <include name="initialize"/>
-          <include name="addbuy"/>
+          <include name="teardown"/>
+          <include name="takescreenshotonfailure"/>
+          <include name="invalidlogin"/>
         </methods>
-      </class> <!-- com.Equarz.Testcases.CustomerorderTest -->
+      </class> <!-- com.Equarz.Testcases.FailedScreenshotTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
